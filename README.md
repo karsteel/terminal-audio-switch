@@ -14,6 +14,10 @@ After quite some research I figured out how to switch speaker (sink), mic (sourc
 
 If you want to control your Pipewire devices through the terminal or a Bash script you should find my scripts helpful and avoid all the trial and error that I did :)
 
+**Explaining the 3 scripts**
+
+This project contains 3 bash scripts.
+
 Values are hardcoded to my speakers in several cases. Here is an example:
 
 `BLUEZ_DEVICE="$(grep bluez_output.30_50_75 <<< "$LIST_SPEAKERS")"`
@@ -26,7 +30,7 @@ The main reason it is all hardcoded is that I wanted to control exactly which of
 
 The 3 bash files control 3 different scenarios.
 
-And how do I use them?
+And how do I run them?
 
 In my case I set it up like this in my .bash_aliases file (which enables me to make terminal shortcuts):
 
