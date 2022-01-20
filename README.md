@@ -1,5 +1,18 @@
 # terminal-audio-switch
+
 Linux Bash scripts to change audio input and output in the terminal based on pactl. Compatible with Pipewire.
+
+**Problem I wanted to solve:**
+
+I have like 5 different audio devices connected to my PC. When I am in an online meeting where I need to wear a headset, I have to manually click around in sound settings to set up correct devices. This is annoying. I would like to be able to set the correct devices and settings for those with just one small terminal command to save time. At the same time it had to be compatible with [Pipewire](https://pipewire.org/) that I now run as default. So this made things harder.
+
+**My solution:**
+
+After quite some research I figured out how to switch speaker (sink), mic (source) and also change the audio profile of the connected device (like A2DP bluetooth codec) in Pipewire and built 3 scripts for each of my 3 personal use cases.
+
+**What's in it for you?**
+
+If you want to control your Pipewire devices through the terminal or a Bash script you should find my scripts helpful and avoid all the trial and error that I did :)
 
 Values are hardcoded to my speakers in several cases. Here is an example:
 
